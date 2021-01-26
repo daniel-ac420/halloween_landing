@@ -1,0 +1,798 @@
+body, html {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth; /* плавная прокрутка */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* --- Шапка сайта --- */
+
+.upperbanner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    text-align: center;
+    
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: calc(50vh - 124px - 75px);
+    left: 0;
+    right: 0;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 940px;
+    /*padding-top: 190px;*/
+    line-height: 95px;
+    margin-bottom: 20px;
+}
+
+h1 + p {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h1, 
+h1 + p {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.wrapper_gray_color {
+    background-color: #F7F7F7;
+    margin-bottom: 100px;
+}
+
+.stat_item h2 {
+    font-size: 72px;
+    color: #F7654A;
+    font-weight: 500; /* wtf */
+    margin-top: 67px;
+    margin-bottom: 0;
+}
+
+.stat_item  h3 {
+    font-size: 36px;
+    font-weight: 500; /* wtf */
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.stat_item p {
+    color: #999999;
+    margin-top: 13px;
+    padding-bottom: 40px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -147px;  /* сдвиг блока наверх */
+    max-width: 900px;
+    font-weight: 500;
+}
+
+.stat_item {
+    display: block;
+    width: 190px;
+    margin-right: -15px;
+}
+
+.stat .stat_item:last-child {
+    margin-right: 0;
+}
+
+
+/* --- Праздники --- */
+
+.party {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+}
+
+.party img {
+    width: 100%;
+}
+
+.party > div { /* адаптивность для поддержки старых браузеров */
+    flex-basis: 31.5%;
+    max-width: 31.5%;
+}
+
+.party h3 {
+    position: relative;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    padding-top: 72px;
+}
+
+.party h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 6px;
+    background-color: #F7654A;
+    margin-top: 44px;
+}
+
+
+
+/* --- блок обратной связи --- */
+
+.contact_us {
+    background-color: #F7654A;
+    /*
+    height: 180px;
+    */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-top: 85px;
+    margin-bottom: 157px;
+}
+
+.box_contact_us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_contact_us h3 {
+    font-size: 48px;
+    margin-top: 38px;
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+}
+
+.box_contact_us h3 + p {
+    font-size: 24px;
+    margin-top: 20px;
+    letter-spacing: 0.068rem;
+    margin-bottom: 40px;
+}
+
+.box_contact_us button {
+    background-color: #fff;
+    border: none;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+    width: 175px;
+}
+
+.box_contact_us button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    left: 0px;
+    background-image: url(../images/icons/request.svg);
+    margin-left: 8%;
+    top: 35%;
+}
+
+
+
+/* --- Что будет на Хеллоуине? --- */
+
+.grid {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        'a b c'
+        'd e f';
+    grid-gap: 20px;
+    margin-top: 60px;
+    /* padding: 20px 10px; */
+}
+
+.grid h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.8rem;
+    margin-top: 21px;
+}
+
+.grid-item {
+    background-color: #F7F7F7;
+    padding-top: 51px;
+    padding-bottom: 46px;
+    margin-bottom: 5px;
+}
+
+.grid-one {
+    grid-area: a;
+}
+
+.grid-two {
+    grid-area: b;
+}
+
+.grid-three {
+    grid-area: c;
+}
+
+.grid-four {
+    grid-area: d;
+}
+
+.grid-five {
+    grid-area: e;
+}
+
+.grid-six {
+    grid-area: f;
+}
+
+
+
+/* --- Фотогалерея --- */
+
+.grid-photo {
+    display: grid;
+    /* grid-template-areas: 'a b c d' 'e f g h'; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 133px;
+    margin-bottom: 115px;
+}
+
+.grid-photo-item {
+    height: 100%; /* в сочетании с .grid-photo-item img >>> height: 100%; убирает полосы между фотографиями */
+    position: relative;
+}
+
+.grid-photo-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgba(64, 65, 73, 0.5);
+    height: 100%;
+    width: 100%;
+    transition: 0.5s; /* плавность перехода */
+}
+
+.grid-photo-item:hover::before {
+    display: none;
+}
+
+.grid-photo-item img {
+    width: 100%; /* изменение ширины при растяжении-сжатии окна */
+    height: 100%;
+}
+
+
+/* --- Отзывы посетителей --- */
+
+.box_feedback {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box_feedback > div {
+    box-sizing: border-box;
+    flex-basis: 31.5%;
+    max-width: 31.5%;
+}
+
+.feedback {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 400;
+    background-color: #F7F7F7;
+    /*
+    width: 350px;
+    height: 260px;
+    */
+    padding: 52px 30px 20px 30px;
+}
+
+.feedback::before {
+    content: '';
+    display: block;
+    /*
+    position: absolute;
+    */
+    background-image: url(../images/icons/quotes-mark-before.svg);
+    background-repeat: no-repeat;
+    /*
+    background-size: contain;
+    */
+    width: 34px;
+    height: 28px;
+}
+
+.name {
+    font-size: 21px;
+    line-height: 1.5em;
+    letter-spacing: 0.02rem;
+}
+
+
+
+/* --- Подвал --- */
+
+.clearfix {
+    clear: both;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer_contacts a {
+    color: #F7654A;
+}
+
+.contacts_category {
+    color: #999999;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.footer_contact_info {
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+.copyrights {
+    height: 82px;
+    background-color: #404149;
+    color: #fff;
+    margin-top: 150px;
+    line-height: 41px; /* выравнивание по центру вертикали */
+}
+
+.copyrights .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyrights span {
+    color: #F7654A;
+}
+
+.copyrights p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* Адаптив */
+
+
+/* ↓↓↓ 920px ↓↓↓ */
+
+@media (max-width: 920px) {
+    
+    .wrapper {
+        max-width: 600px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    .upperbanner {
+        height: 80vh;
+    }
+    
+    .title {
+        top: calc(40vh - 124px - 75px);
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 82px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .wrapper_gray_color {
+        margin-bottom: 50px;
+    }
+
+    .stat_item h2 {
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .stat_item  h3 {
+        font-size: 24px;
+    }
+
+    .stat_item p {
+        padding-bottom: 20px;
+    }
+
+    .stat {
+        margin-top: -110px;  /* сдвиг блока наверх */
+    }
+
+    .stat_item {
+        margin-right: 0px;
+    }
+
+
+    /* --- Праздники --- */
+
+    .party {
+        margin-top: 30px;
+    }
+
+    .party h3 {
+        padding-top: 40px;
+    }
+
+    .party h3::before {
+        margin-top: 20px;
+    }
+
+
+    /* --- блок обратной связи --- */
+
+    .contact_us {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .box_contact_us h3 {
+        font-size: 36px;
+    }
+
+    .box_contact_us h3 + p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+
+    /* --- Что будет на Хеллоуине? --- */
+
+    .grid {
+        grid-gap: 10px;
+        margin-top: 30px;
+    }
+
+    .grid-item {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+
+    /* --- Фотогалерея --- */
+
+    .grid-photo {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+
+    /* --- Отзывы посетителей --- */
+
+    .box_feedback {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .box_feedback > div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .feedback {
+        padding: 30px 30px 20px 30px;
+    }
+
+    .feedback::before {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+
+
+    /* --- Подвал --- */
+
+    .footer_contacts {
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .footer_contacts div {
+        flex-basis: 49%;
+        max-width: 49%;
+        margin-bottom: 30px;
+    }
+
+    .contacts_category {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer_contact_info {
+        font-size: 16px;
+    }
+
+    .copyrights {
+        height: 82px;
+        margin-top: 80px;
+        line-height: 60px; /* выравнивание по центру вертикали */
+    }
+    
+}
+
+/* ↑↑↑ 920px ↑↑↑ */
+
+
+/* ↓↓↓ 640px ↓↓↓ */
+
+@media (max-width: 640px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    .upperbanner {
+        height: initial;
+        position: inherit;
+        padding: 20px 0 120px;
+    }
+    
+    .title {
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+    
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+        max-width: 400px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .stat,
+    .party {
+        flex-wrap: wrap;
+    }
+    
+    .stat_item {
+        flex-basis: 49%;
+        max-width: 49%;
+        padding-top: 20px;
+    }
+    
+    .stat_item h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+    
+    .stat_item h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .stat_item p {
+        padding-bottom: 8px;
+        margin-top: 8px;
+    }
+    
+    .party>div {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .party img {
+        max-width: 300px;
+    }
+    
+    .party h3::before {
+        right: 0;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .party h3 {
+        padding-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contact_us {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .box_contact_us h3 {
+        font-size: 28px;
+    }
+    
+    .box_contact_us h3 + p {
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    
+    .grid {
+        grid-template-areas: "a b" "c d" "e f";
+    }
+    
+    .grid-photo {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .footer_contacts {
+        margin-top: 30px;
+    }
+    
+    .footer_contacts img {
+        max-width: 25px;
+        width: 100%;
+    }
+    
+    .contacts_category {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    
+    .footer_contact_info {
+        font-size: 14px;
+        line-height: 1.25em;
+    }
+    
+    .copyrights {
+        margin-top: 30px;
+        height: auto;
+    }
+    
+    .copyrights .wrapper {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .copyrights .wrapper p {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 30px;
+        line-height: 0;
+        font-size: 14px;
+    }
+        
+}
+
+/* ↑↑↑ 640px ↑↑↑ */
+
+
+/* ↓↓↓ 320px ↓↓↓ */
+
+@media (max-width: 320px) {
+   
+    /*
+    .wrapper {
+        max-width: 290px;
+    }
+    */
+    
+    h1 {
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 240px;
+    }
+    
+    h1 + p {
+        font-size: 12px;
+    }
+    
+    .stat_item {
+        
+    }
+    
+    .stat_item h2 {
+        font-size: 30px;
+    }
+    
+    .stat_item h3 {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+    .stat_item p {
+        padding-bottom: 0;
+        margin-top: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .box_contact_us h3 {
+        font-size: 20px;
+    }
+    
+    .box_contact_us h3 + p {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    
+    .box_contact_us button {
+        font-size: 12px;
+        width: 140px;
+        padding: 14px 0;
+    }
+    
+    .grid {
+        grid-template-areas: "a" "b" "c" "d" "e" "f";
+    }
+    
+    .name {
+        font-size: 16px;
+    }
+    
+}
+
+/* ↑↑↑ 320px ↑↑↑ */
